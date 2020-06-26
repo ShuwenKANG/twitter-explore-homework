@@ -15,6 +15,37 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+      width: 80%;
+      > label > input {
+        padding: $container-padding-y $container-padding-x;
+        width: 250px;
+        background-color: transparent;
+        border-color: transparent;
+        border-bottom: 2px solid $border-color;
+      }
+      > a {
+        color: $primary-color;
+        text-decoration: none;
+        padding-top: 20px;
+      }
+    }
+
+    > header {
+      padding: $header-padding-y $header-padding-x;
+      > label {
+        font-size: 1.3rem;
+        color: $white;
+      }
+    }
+
+    > footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: $footer-padding-y $footer-padding-x;
+      > label {
+        padding: $footer-padding-y $footer-padding-x;
+      }
     }
   }
 
